@@ -1,6 +1,7 @@
 var r = 0;
 var b = 255;
 var g = 0;
+//trying out github
 
 function setup() {
 	createCanvas(600,400);
