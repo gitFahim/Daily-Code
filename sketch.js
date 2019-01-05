@@ -11,7 +11,7 @@ function setup() {
 function draw() {
 
 	r = map(mouseX, 0, 600, 0 ,255);
-	b = map(mouseX, 0, 600, 255, 0);
+	b = map(mouseX, 0, 600, 0, 255);
 	g = map(mouseY, 0, 400, 0, 255);
 	background(r, g, b);
 	
