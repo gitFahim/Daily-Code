@@ -1,0 +1,78 @@
+page:5
+input containing spaces:
+
+string s;
+getline(cin, s);
+
+page:6
+
+reding from a file:
+
+freopen("input.txt", "r", stdin);
+freopen("output.txt", "w", stdout);
+
+long long x= 11435263634758484635LL;
+
+For example, the following code calculates n!, the factorial of n, modulo m:
+long long x = 1;
+for (int i = 2; i <= n; i++) {
+x = (x*i)%m;
+}
+cout << x%m << "\n";
+
+page:9
+
+For example, we can define the following macros:
+#define F first
+#define S second
+#define PB push_back
+#define MP make_pair
+After this, the code
+v.push_back(make_pair(y1,x1));
+v.push_back(make_pair(y2,x2));
+int d = v[i].first+v[i].second;
+can be shortened as follows:
+v.PB(MP(y1,x1));
+v.PB(MP(y2,x2));
+int d = v[i].F+v[i].S;
+
+page:29
+
+increasing order sort:
+
+vector<int>v = {4,2,5,3,8,3};
+sort(v.begin(), v.end());
+
+decreasing order:
+sort(v.rbegin(),v.rend());
+
+page:31 
+
+vector of strings can be sorted as follows:
+sort(v.begin(), v.end(), comp);
+
+
+page:32
+
+binary search: O(logn)
+
+//array contains an element with value x:
+
+auto k = lower_bound(array,array+n,x)-array;
+if (k < n && array[k] == x) {
+// x found at index k
+}
+
+//counts the number of element whose vlaue is x:
+auto a = lower_bound(array, array+n, x);
+auto b = upper_bound(array, array+n, x);
+cout << b-a << "\n";
+
+Page: 41 
+bitset
+
+bitset<10> a(string("0010110110"));
+bitset<10> b(string("1011011000"));
+cout << (a&b) << "\n"; // 0010010000
+cout << (a|b) << "\n"; // 1011111110
+cout << (a^b) << "\n"; // 1001101110
